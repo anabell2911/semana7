@@ -1,0 +1,31 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="1.css">
+    <title>2</title>
+    <script>
+    var x=11;
+    </script>
+</head>
+<body background="fondo1.jpg" >
+<body onload="empezar()">
+	<img src="icon.jpg" align="left" width="70" height="70">	
+<font size="8"><font face="Merriweather-Light"  ><div class="div34" class="anita"><b><big><b>C R O N O M E T R O</big></b>
+</big></b></div></font></font>
+
+<script>
+function empezar(){
+    setTimeout(baje,5000);}
+function baje(){
+    crono=setInterval(bajemas,1000)}
+function bajemas(){
+    x=x-1;
+    document.getElementById('cu').innerHTML=(x);
+    if (x==0) {
+        clearInterval(crono);
+        var y=document.getElementById('cu').innerHTML=("F I N A L I C É")}
+}
+
+</script>
+    <div id="cu" class="c1"><br>H O L A</div>
+</body>
+</html>

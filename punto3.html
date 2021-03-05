@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>PUNTO 3</title>
+    <link rel="stylesheet" type="text/css" href="1.css">
+</head>
+<body background="fondo1.jpg" >
+<img src="icon.jpg" align="left" width="70" height="70">    
+<font size="8"><font face="Merriweather-Light"  ><div class="div34" class="anita"><b><big><b>M O V I M I E N T O &nbsp;&nbsp; D E  &nbsp;&nbsp;M O U S E</big></b>
+</big></b></div></font></font>
+<body onmousemove="position(event)">
+    <div id="mousePositions"></div>
+    <div id="letras">Fuera</div>
+    <div class="c2"></div>
+<script>
+function position(event){
+var x = event.clientX; 
+var y = event.clientY; 
+var mouse = document.getElementById('mouse')
+var bla = document.getElementById('letras') 
+if (x>546&&x<955 && y>197&&y<394) {
+    bla.innerHTML = 'Dentro'; }
+else{
+    bla.innerHTML = 'Fuera';}
+}
+</script>
+
+
+</div>
+
+
+</body>
+</html>

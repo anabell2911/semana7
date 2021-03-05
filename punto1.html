@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Punto 1</title>
+    <link rel="stylesheet" type="text/css" href="1.css">
+    <script type="text/javascript">
+        var array=[];
+var i=0;
+var mayor;
+var a=document.getElementById('entrada');
+function fingresa(){
+    if(i<5)
+    {
+        if (i==0){
+            mayor=parseInt(a.value);
+        }
+        else if(a.value>mayor)
+        {
+            mayor=parseInt(a.value);
+        }
+        console.log(mayor);
+        i+=1;
+        array[i]=a.value;
+    }
+        
+}
+
+function fmostrar()
+{
+    document.getElementById('resultado').value=mayor;
+}
+    </script>
+</head>
+<body>
+    <body background="fondo1.jpg" >
+    <img src="icon.jpg" align="left" width="70" height="70">    
+<font size="8"><font face="Merriweather-Light"  ><div class="div34" class="anita"><b><big><b> B U S Q U E D A &nbsp;&nbsp; N U M E R O S</big></b>
+</big></b></div></font></font>
+    <center>
+        <div class="punto1">
+            <input class="a" type="number" name="entrada" placeholder="Ingresa 5 numeros" id="entrada">
+            <input class="b1" type="button" name="ingresar" value="I N G R E S A R" id="ingresar" onclick="fingresa()">
+        </div>
+        <br>
+        <div class="punto1">
+            <input class="b" type="number" name="resultado" id="resultado" placeholder="Mostrar mayor">
+            <input class="b1" type="button" name="mostrar" value="B U S C A R     M A Y O R " id="mostrar" onclick="fmostrar()">
+        </div>
+    </center>
+              <script src="script.js">
+    
+</script>
+</body>
